@@ -7,6 +7,10 @@
 </head>
 <body>
     
+    <% if (locals.errorMessage != null) { %>
+        <%= errorMessage %>
+    <% } %>
+    
     <%- body %>
 
 </body>

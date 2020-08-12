@@ -1,1 +1,14 @@
-this is the register page
+<h1>Register User</h1>
+<form action="/user/register" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" name="name" value="<%= user.name %>">
+    <label for="email">Email:</label>
+    <input type="email" name="email" value="<%= user.email %>">
+    <label for="password">password:</label>
+    <input type="password" name="password" value="<%= user.password %>">
+
+    <button type="submit">register</button>
+
+
+</form>
+
